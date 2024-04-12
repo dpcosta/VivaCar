@@ -1,3 +1,5 @@
+using VivaCar.Api.Endpoints;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +18,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPesquisaEndpoints();
+app
+    .MapPesquisaEndpoints()
+    .MapReservaEndpoints()
+    .MapAluguelEndpoints();
+
 
 app.Run();
