@@ -1,0 +1,2 @@
+# Primeiro projeto de testes com C# e xUnit
+Repositório com o código utilizado no evento do servidor Discord da Alura. Venha criar seus primeiros testes automatizados com C#! Este evento é perfeito para quem deseja dar os primeiros passos na criação de um projeto de testes automatizados em C# com xUnit. Vamos abordar a estrutura de testes automatizados no .NET e conhecer fundamentos e conceitos de testes de unidade. Tudo isso validando um projeto real! Não perca a chance de começar a incorporar testes automatizados em seus projetos C#!
