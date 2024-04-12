@@ -1,5 +1,5 @@
-using VivaCar.Api.Commands;
 using VivaCar.Api.Endpoints;
+using VivaCar.Modelo.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
