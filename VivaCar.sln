@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VivaCar.Api", "VivaCar.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VivaCar.TestesNoConsole", "VivaCar.TestesNoConsole\VivaCar.TestesNoConsole.csproj", "{BC6CF20A-D856-40D9-A21B-F9A1BCFC8522}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VivaCar.Testes", "VivaCar.Testes\VivaCar.Testes.csproj", "{DAEA4C59-C85D-4841-B8AA-3B40D6D2D37B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BC6CF20A-D856-40D9-A21B-F9A1BCFC8522}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6CF20A-D856-40D9-A21B-F9A1BCFC8522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC6CF20A-D856-40D9-A21B-F9A1BCFC8522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAEA4C59-C85D-4841-B8AA-3B40D6D2D37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAEA4C59-C85D-4841-B8AA-3B40D6D2D37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAEA4C59-C85D-4841-B8AA-3B40D6D2D37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAEA4C59-C85D-4841-B8AA-3B40D6D2D37B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
