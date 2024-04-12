@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using VivaCar.Api.Commands;
 using VivaCar.Api.Requests;
 using VivaCar.Api.Responses;
+using VivaCar.Modelo;
 
 namespace VivaCar.Api.Endpoints;
 
@@ -10,9 +12,14 @@ internal static class PesquisaEndpoints
     {
         var groupBuilder = endpoints.MapGroup("/pesquisa").WithTags("Pesquisa");
 
-        groupBuilder.MapGet("", ([FromBody] PesquisaRequest request) =>
+        groupBuilder.MapGet("", async (
+            [FromQuery] DateTime dataRetirada,
+            [FromQuery] DateTime dataDevolucao,
+            [FromQuery] Categoria categoria,
+            [FromServices] IPesquisaCommand command) =>
         {
-            return Results.Ok();
+            IEnumerable<Automovel> lista = await command.ExecutarAsync(dataRetirada, dataDevolucao, categoria);
+            return TypedResults.Ok(lista.Select(AutomovelResponse.From));
         })
         .Produces<IEnumerable<AutomovelResponse>>(200)
         .WithName("GetPesquisaAutos")

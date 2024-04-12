@@ -9,6 +9,6 @@ public class Reserva
     public Automovel Automovel { get; set; }
     public Guid ClienteId { get; set; }
     public Cliente Cliente { get; set; }
-    public decimal ValorTotal { get; set; }
+    public double ValorTotal { get; set; }
     public SituacaoReserva Situacao { get; set; }
 }
